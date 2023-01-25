@@ -23,6 +23,7 @@ public class Task1 {
         secondNumber = scanner.nextDouble();
         System.out.println("Введите один из символов '+', '-', '*' или '/'");
         operation = scanner.next();
+        scanner.close();
 
         switch(operation) {
             case "+":
