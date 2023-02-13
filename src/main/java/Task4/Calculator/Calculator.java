@@ -2,9 +2,6 @@ package Task4.Calculator;
 
 import java.util.Scanner;
 
-/**
- * Выражения для калькулятора
- */
 public class Calculator {
     Scanner scanner = new Scanner(System.in);
     Logic logic = new Logic();
