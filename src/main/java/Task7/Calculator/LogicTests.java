@@ -25,4 +25,9 @@ public class LogicTests {
     public void testDivision() {
         Assertions.assertEquals(15, logic.getResult(30,2,"/"));
     }
+
+    @Test
+    public void testDivisionOnZero() {
+        Assertions.assertEquals(0, logic.getResult(3, 0, "/"));
+    }
 }
