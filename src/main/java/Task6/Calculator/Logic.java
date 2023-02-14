@@ -21,7 +21,11 @@ public class Logic {
                 }
                 case "/": {
                     if (secondNumber == 0) {
-                        throw new ArithmeticException("На ноль делить нельзя");
+                        try {
+                            throw new ArithmeticException("На ноль делить нельзя");
+                        } catch (ArithmeticException e) {
+                            System.out.println(e);
+                        }
                     } else {
                         division(firstNumber, secondNumber);
                     }
